@@ -24,3 +24,11 @@ a:hover {
   background-color: ForestGreen;
   font-size: 46px;
 }
+
+.one {
+  transition-property: background-color;
+  transition-duration: 2s;
+
+  animation: scaleUp 400ms ease 200ms;
+}
+
