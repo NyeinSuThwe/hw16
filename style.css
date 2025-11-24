@@ -28,41 +28,26 @@ a:hover {
 .one {
   transition-property: background-color;
   transition-duration: 2s;
-
   animation: scaleUp 400ms ease 200ms;
 }
 
 .two {
   transition-property: background-color;
   transition-duration: 400ms;
-
   animation: flip 400ms ease-out;
 }
 
 .three {
-  /* original longhand transition (kept for reference)
-  transition-timing-function: ease-out;
-  transition-property: background-color;
-  transition-duration: 400ms;
-  transition-delay: 200ms;
-  */
-
-  /* shorthand transition: property, duration, timing, delay */
   transition: background-color 400ms ease-out 200ms;
-
-  /* animation: blur to sharp focus */
   animation: focus 400ms ease-in;
 }
 
-/* multi-property transitions for .four and .five */
 .four {
-  /* reuse .three transition + add font-size transition */
   transition: background-color 400ms ease-out 200ms,
               font-size 800ms linear 100ms;
 }
 
 .five {
-  /* transition all changing properties with same timing */
   transition: all 400ms ease-out 200ms;
 }
 
@@ -92,4 +77,3 @@ a:hover {
     filter: blur(0px);
   }
 }
-
