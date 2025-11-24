@@ -32,3 +32,9 @@ a:hover {
   animation: scaleUp 400ms ease 200ms;
 }
 
+.two {
+  transition-property: background-color;
+  transition-duration: 400ms;
+
+  animation: flip 400ms ease-out;
+}
